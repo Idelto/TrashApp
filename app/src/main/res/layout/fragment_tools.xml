@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:text="@string/signInTellUs"
+        android:textColor="@color/colorText"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textCelular"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:hint="Qual seu celular ?"
+        android:textColor="@color/colorText"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp">
+
+        <EditText
+            android:id="@+id/txtCelular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textCep"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:hint="Qual seu CEP ?"
+        android:textColor="@color/colorText"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textCelular"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp">
+
+        <EditText
+            android:id="@+id/txtCep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textRua"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:hint="Qual sua Rua ?"
+        android:textColor="@color/colorText"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textCep"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp">
+
+        <EditText
+            android:id="@+id/txtRua"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textNumero"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:hint="Qual seu número ?"
+        android:textColor="@color/colorText"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textRua"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp">
+
+        <EditText
+            android:id="@+id/txtNumero"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textComplemento"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:hint="Complemento ?"
+        android:textColor="@color/colorText"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textNumero"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp">
+
+        <EditText
+            android:id="@+id/txtComplemento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textBairro"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:hint="Qual seu Bairro ?"
+        android:textColor="@color/colorText"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textComplemento"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp">
+
+        <EditText
+            android:id="@+id/txtBairro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textCidade"
+        android:layout_width="350dp"
+        android:layout_height="62dp"
+        android:hint="Qual sua Cidade ?"
+        android:textColor="@color/colorText"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@+id/textBairro"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp">
+
+        <EditText
+            android:id="@+id/txtCidade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAtualizaInformacoes"
+        android:layout_width="350dp"
+        android:layout_height="52dp"
+        android:background="@drawable/border_button"
+        android:text="Clique para atualizar as informações"
+        android:textColor="@color/btntextColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCidade"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnReseteSuaSenha"
+        android:layout_width="350dp"
+        android:layout_height="52dp"
+        android:background="@drawable/border_button"
+        android:text="Alterar Senha"
+        android:textColor="@color/btntextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAtualizaInformacoes"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/al_description"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/al_description" />
+
+            <ImageButton
+                android:id="@+id/btn_lat_aluminium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27"
+                app:srcCompat="@drawable/ic_a_al_latinhas_aluminio" />
+
+            <ImageButton
+                android:id="@+id/btn_desodorante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_enlatados"
+                app:layout_constraintStart_toEndOf="@+id/btn_lat_aluminium"
+                app:layout_constraintTop_toTopOf="@+id/btn_lat_aluminium"
+                app:srcCompat="@drawable/ic_a_al_desodorante" />
+
+            <ImageButton
+                android:id="@+id/btn_enlatados"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_desodorante"
+                app:srcCompat="@drawable/ic_a_al_enlatados" />
+
+            <ImageButton
+                android:id="@+id/btn_achocolatado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintBottom_toTopOf="@+id/btn_panelas"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_lat_aluminium"
+                app:srcCompat="@drawable/ic_a_al_achocolatado_lata" />
+
+            <ImageButton
+                android:id="@+id/btn_azeite_lata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintBottom_toTopOf="@+id/btn_lata_tinta"
+                app:layout_constraintStart_toStartOf="@+id/btn_desodorante"
+                app:layout_constraintTop_toBottomOf="@+id/btn_lat_aluminium"
+                app:srcCompat="@drawable/ic_a_al_azeite_lata" />
+
+            <ImageButton
+                android:id="@+id/btn_spray_lata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintBottom_toTopOf="@+id/btn_diversos"
+                app:layout_constraintStart_toStartOf="@+id/btn_enlatados"
+                app:layout_constraintTop_toBottomOf="@+id/btn_lat_aluminium"
+                app:srcCompat="@drawable/ic_a_al_lata_spray" />
+
+            <ImageButton
+                android:id="@+id/btn_panelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_achocolatado"
+                app:layout_constraintStart_toStartOf="@+id/btn_achocolatado"
+                app:srcCompat="@drawable/ic_a_al_panelas" />
+
+            <ImageButton
+                android:id="@+id/btn_diversos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/btn_spray_lata"
+                app:layout_constraintTop_toBottomOf="@+id/btn_azeite_lata"
+                app:srcCompat="@drawable/ic_a_al_diversos" />
+
+            <ImageButton
+                android:id="@+id/btn_lata_tinta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/btn_azeite_lata"
+                app:layout_constraintTop_toTopOf="@+id/btn_panelas"
+                app:srcCompat="@drawable/ic_a_al_lata_tinta" />
+
+            <ImageButton
+                android:id="@+id/btn_lata_leite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_panelas"
+                app:srcCompat="@drawable/ic_a_al_lata_leite" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

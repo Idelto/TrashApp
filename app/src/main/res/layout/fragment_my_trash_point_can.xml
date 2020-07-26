@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_container"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtMyTrashPointCanTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Essa é a sua lixeira de pontos"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtBrief"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resumo"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtPesoTotalDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shoRecyclerView"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorPrimary"
+        android:padding="4dp"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/txtBrief"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyTrashPointCanTitle"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRecycle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border_button"
+        android:text="Reciclar"
+        android:textColor="@color/btntextColor"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtTCoinsTotalDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Total de Ŧ Coins"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRecycle"
+        app:layout_constraintStart_toStartOf="@+id/txtQtyTotalDesc" />
+
+    <TextView
+        android:id="@+id/txtQtyTotalDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginBottom="8dp"
+        android:text="Quantidade Total"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTCoinsTotalDesc"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtPesoTotalDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="8dp"
+        android:text="Peso Total"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtQtyTotalDesc"
+        app:layout_constraintStart_toStartOf="@+id/txtQtyTotalDesc"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtQtyTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="0"
+        android:textColor="@color/colorAccent"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtQtyTotalDesc" />
+
+    <TextView
+        android:id="@+id/txtPesoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="@color/colorAccent"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtQtyTotal"
+        app:layout_constraintTop_toTopOf="@+id/txtPesoTotalDesc" />
+
+    <TextView
+        android:id="@+id/txtTcoinsTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="0"
+        android:textColor="@color/colorAccent"
+
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtTCoinsTotalDesc" />
+
+    <TextView
+        android:id="@+id/txtemptyTrashCan"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Opps... A sua lixeira de pontos está vazia , vamos começar a reciclar ? 😜"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="25dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imgRecycleSign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgRecycleSign"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_recycle_sign"
+        android:visibility="invisible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

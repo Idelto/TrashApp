@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/pl_description"
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="@string/pl_description" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_achocolatado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView27"
+                app:srcCompat="@drawable/ic_a_pl_achocolatado" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_alcool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_amaciante_sabao_liquido"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_achocolatado"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_achocolatado"
+                app:srcCompat="@drawable/ic_a_pl_alcool" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_amaciante_sabao_liquido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_achocolatado"
+                app:srcCompat="@drawable/ic_a_pl_amaciante_sabao_liquido" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_aparelho_barbear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_achocolatado"
+                app:srcCompat="@drawable/ic_a_pl_aparelho_barbear" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_bandejas_isopor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_canudos"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_aparelho_barbear"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_aparelho_barbear"
+                app:srcCompat="@drawable/ic_a_pl_bandejas_isopor" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_canudos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_aparelho_barbear"
+                app:srcCompat="@drawable/ic_a_pl_canudos" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_capsulas_cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_aparelho_barbear"
+                app:srcCompat="@drawable/ic_a_pl_capsulas_cafe" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_copos_plasticos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_detergente"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_capsulas_cafe"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_capsulas_cafe"
+                app:srcCompat="@drawable/ic_a_pl_copos_plasticos" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_detergente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_capsulas_cafe"
+                app:srcCompat="@drawable/ic_a_pl_detergente" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_embalagem_galao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_capsulas_cafe"
+                app:srcCompat="@drawable/ic_a_pl_embalagem_galao" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_embalagem_sabonete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_embalagem_biscoito"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_embalagem_galao"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_embalagem_galao"
+                app:srcCompat="@drawable/ic_a_pl_embalagem_sabonete" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_embalagem_biscoito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_embalagem_galao"
+                app:srcCompat="@drawable/ic_a_pl_embalagens_biscoito" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_embalagem_cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_embalagem_galao"
+                app:srcCompat="@drawable/ic_a_pl_embalagens_cafe" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_embalagem_copo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_embalagem_gatilho"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_embalagem_cafe"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_embalagem_cafe"
+                app:srcCompat="@drawable/ic_a_pl_embalagens_copo" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_embalagem_gatilho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_embalagem_cafe"
+                app:srcCompat="@drawable/ic_a_pl_embalagens_gatilho" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_embalagem_geral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_embalagem_cafe"
+                app:srcCompat="@drawable/ic_a_pl_embalagens_geral" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_embalagem_geral_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_embalagem_saches"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_embalagem_geral"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_embalagem_geral"
+                app:srcCompat="@drawable/ic_a_pl_embalagens_geral2" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_embalagem_saches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_embalagem_geral"
+                app:srcCompat="@drawable/ic_a_pl_embalagens_saches" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_escova_dentes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_embalagem_geral"
+                app:srcCompat="@drawable/ic_a_pl_escova_dentes" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_exaguante_bucal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_fermentado"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_escova_dentes"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_escova_dentes"
+                app:srcCompat="@drawable/ic_a_pl_exaguante_bucal" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_fermentado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_escova_dentes"
+                app:srcCompat="@drawable/ic_a_pl_fermentado" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_frascos_hidratante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_escova_dentes"
+                app:srcCompat="@drawable/ic_a_pl_frascos_hidratantes" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_frascos_most_ket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_garrafas_plastico_cor"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_frascos_hidratante"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_frascos_hidratante"
+                app:srcCompat="@drawable/ic_a_pl_frascos_most_ket" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_garrafas_plastico_cor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_frascos_hidratante"
+                app:srcCompat="@drawable/ic_a_pl_garrafas_plasticas_cor" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_garrafas_plastico_transparente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_frascos_hidratante"
+                app:srcCompat="@drawable/ic_a_pl_garrafas_plasticas_transp" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_marmitas_isopor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_mbalagem_bico_de_pato"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_garrafas_plastico_transparente"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_garrafas_plastico_transparente"
+                app:srcCompat="@drawable/ic_a_pl_marmitas_isopor" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_mbalagem_bico_de_pato"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_garrafas_plastico_transparente"
+                app:srcCompat="@drawable/ic_a_pl_mbalagem_bico_de_pato" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_outros_frascos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_garrafas_plastico_transparente"
+                app:srcCompat="@drawable/ic_a_pl_outros_frascos" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_pacotes_geral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_pet"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_outros_frascos"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_outros_frascos"
+                app:srcCompat="@drawable/ic_a_pl_pacotes_geral" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_pet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_outros_frascos"
+                app:srcCompat="@drawable/ic_a_pl_pet" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_plasticos_isopor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_outros_frascos"
+                app:srcCompat="@drawable/ic_a_pl_plasticos_isopor" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_potes_cremes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_potes_maio"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_plasticos_isopor"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_plasticos_isopor"
+                app:srcCompat="@drawable/ic_a_pl_potes_cremes" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_potes_maio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_plasticos_isopor"
+                app:srcCompat="@drawable/ic_a_pl_potes_maio" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_potes_manteiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_plasticos_isopor"
+                app:srcCompat="@drawable/ic_a_pl_potes_manteiga" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_potes_sorvete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_pratos_descartaveis"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_potes_manteiga"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_potes_manteiga"
+                app:srcCompat="@drawable/ic_a_pl_potes_sorvete" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_pratos_descartaveis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_potes_manteiga"
+                app:srcCompat="@drawable/ic_a_pl_pratos_descartaveis" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_pratos_isopor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_potes_manteiga"
+                app:srcCompat="@drawable/ic_a_pl_pratos_isopor" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_refil_alimentos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_refis_gatilho"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_pratos_isopor"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_pratos_isopor"
+                app:srcCompat="@drawable/ic_a_pl_refil_alimentos" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_refis_gatilho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_pratos_isopor"
+                app:srcCompat="@drawable/ic_a_pl_refis_gatilho" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_refis_liquido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_pratos_isopor"
+                app:srcCompat="@drawable/ic_a_pl_refis_liquidos" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_sacos_alimentos_geral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_shampoo_cond"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_refis_liquido"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_refis_liquido"
+                app:srcCompat="@drawable/ic_a_pl_sacos_alimentos_geral" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_shampoo_cond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_refis_liquido"
+                app:srcCompat="@drawable/ic_a_pl_shampoo_cond" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_talheres_plasticos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_refis_liquido"
+                app:srcCompat="@drawable/ic_a_pl_talheres_plasticos" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_tubos_pasta_dente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_pl_shampoo_cond"
+                app:layout_constraintStart_toEndOf="@+id/btn_pl_talheres_plasticos"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_talheres_plasticos"
+                app:srcCompat="@drawable/ic_a_pl_tubos_pasta_dente" />
+
+            <ImageButton
+                android:id="@+id/btn_pl_sacola_supermercado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/zxing_transparent"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btn_pl_talheres_plasticos"
+                app:srcCompat="@drawable/ic_a_pl_sacola_supermercado" />
+
+            <ImageButton
+                android:id="@+id/pl_saco_lixo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/btn_pl_talheres_plasticos"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_talheres_plasticos"
+                app:srcCompat="@drawable/ic_a_pl_saco_lixo" />
+
+            <ImageButton
+                android:id="@+id/pl_cx_frutas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/btn_pl_tubos_pasta_dente"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_talheres_plasticos"
+                app:srcCompat="@drawable/ic_a_pl_cx_frutas" />
+
+            <ImageButton
+                android:id="@+id/pl_emb_ovo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/btn_pl_sacola_supermercado"
+                app:layout_constraintTop_toBottomOf="@+id/btn_pl_talheres_plasticos"
+                app:srcCompat="@drawable/ic_a_pl_emb_ovo" />
+
+            <ImageButton
+                android:id="@+id/pl_cx_pack_lata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/pl_saco_lixo"
+                app:layout_constraintTop_toBottomOf="@+id/pl_saco_lixo"
+                app:srcCompat="@drawable/ic_a_pl_pack_latinhas" />
+
+            <ImageButton
+                android:id="@+id/pl_pote_iorgute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/pl_cx_frutas"
+                app:layout_constraintTop_toBottomOf="@+id/pl_saco_lixo"
+                app:srcCompat="@drawable/ic_a_pl_pote_iorgute" />
+
+            <ImageButton
+                android:id="@+id/pl_pote_requeijao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/pl_emb_ovo"
+                app:layout_constraintTop_toBottomOf="@+id/pl_saco_lixo"
+                app:srcCompat="@drawable/ic_a_pl_pote_requeijao" />
+
+            <ImageButton
+                android:id="@+id/pl_frasco_molho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/pl_cx_pack_lata"
+                app:layout_constraintTop_toBottomOf="@+id/pl_cx_pack_lata"
+                app:srcCompat="@drawable/ic_a_pl_frasco_molho" />
+
+            <ImageButton
+                android:id="@+id/pl_copo_cha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/zxing_transparent"
+                app:layout_constraintStart_toStartOf="@+id/pl_pote_iorgute"
+                app:layout_constraintTop_toBottomOf="@+id/pl_cx_pack_lata"
+                app:srcCompat="@drawable/ic_a_pl_copo_cha" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

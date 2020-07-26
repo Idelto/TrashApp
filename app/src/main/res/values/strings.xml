@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">TrashApp</string>
+    <string name="frase">Todo mundo pode reciclar</string>
+    <string name="hintLoginEmail">Digite seu e-mail</string>
+    <string name="hintLoginSenha">Digite sua Senha</string>
+    <string name="signInHello">Olá, seja Bem Vindo !! 😍 </string>
+    <string name="signInTellUs">Diga um pouco mais sobre você :)</string>
+    <string name="signInName">Qual o seu Nome ?</string>
+    <string name="signInEmail">Qual o seu E-mail ?</string>
+    <string name="signInPassword">Qual a sua Senha ?</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="al_description">Cada Latinha reciclada economiza-se energia suficiente para 3h de televisão. 😉</string>
+    <string name="pap_description">São Utilizados cerca de 10 litros de água para produção de uma folha A4 😟</string>
+    <string name="vid_description">1 Kg de vidro é revendido a menos de R$0,05  😱, o custo logístico é superior ao retorno financeiro. O ideal é que sempre reaproveitemos nossas embalagens de vidro.</string>
+    <string name="pl_description">Você sabia que existem mais de 7 tipos diferentes de plásticos ? 😳 </string>
+    <string name="crossed"><strike>R$20</strike></string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_trash_coin_balance">Meus TrashCoins</string>
+    <string name="menu_trash_point_can">Lixeira de Pontos</string>
+    <string name="menu_coupon_kart">Carrinho de Cupons</string>
+    <string name="menu_my_coupons">Meus Cupons</string>
+    <string name="menu_share">Compartilhar</string>
+    <string name="menu_profile">Informações de Perfil</string>
+    <string name="menu_about">Sobre Nós</string>
+    <string name="menu_logout">Sair</string>
+    <string name="menu_my_requests">Minhas Retiradas</string>
+
+    <string name="permissoes_localização">Precisa garantir as permissões de localização para que possamos coletar seus reciclaveis 😉</string>
+    <string name="reciclagem_intro">Clique no ícone RECICLAR.  Os recicláveis estão separados por categoria, escolha seus recicláveis e envie para a LIXEIRA.\n\n
+Ahhh.. não se esqueça, seus resíduos devem ser entregues separados em sacolinhas individuais. 😉\n\n
+Sua atitude transforma o mundo!♻️💚🌎
+</string>
+    <string name="Trashcoins_intro">Reciclando com o Trashapp você faz bem ao meio ambiente e ainda recebe benefícios incríveis e um deles são os TRASHCOINS, nossa moeda virtual.\n\n
+Quanto mais você recicla mais você ganha!😄\n\n
+Indique o Trashapp para um parente ou amigo, além de contribuir com o meio ambiente, você também ganha mais TRASHCOINS.😉</string>
+    <string name="Coupons_intro">Você pode trocar seus TRASHCOINS por cupons de desconto em produtos ou serviços da sua preferência.🤩\n\n
+Não deixe de dar um 👍 nos seus preferidos.</string>
+    <string name="Lixeira_intro">Seus resíduos vão pra lixeira, mas não é uma lixeira comum.\n\n
+Na LIXEIRA do trashapp você tem a lista de todo material descartado, com quantidade, peso e seus TRASHCOINS.\n\n
+Quando sua LIXEIRA estiver cheia, basta clicar em RECICLAR e depois DISPONIBILIZAR.\n\n Pronto! Em breve um coletor recolherá seu resíduo no endereço informado.</string>
+
+
+    <string name="grant_permissions">Liberar permissões</string>
+    <string name="please_grant_permissions">Para poder prosseguir é importante liberar as permissões de localização</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

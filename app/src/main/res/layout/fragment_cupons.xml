@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTotalTCoins">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp"
+                    android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/btn_scl_Todos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:background="@drawable/border_button_white_green"
+                            android:paddingHorizontal="10dp"
+                            android:text="Todos"
+                            android:textColor="@color/colorPrimaryDark" />
+
+
+                        <Button
+                            android:id="@+id/btn_scl_Favoritos"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:paddingHorizontal="10dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/border_button_white_green"
+                            android:text="Favoritos" />
+
+                        <Button
+                            android:id="@+id/btn_scl_Alimentacao"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:paddingHorizontal="10dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/border_button_white_green"
+                            android:text="Alimentação" />
+
+                        <Button
+                            android:id="@+id/btn_scl_Cosmeticos"
+                            android:layout_width="wrap_content"
+                            android:paddingHorizontal="10dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_height="40dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/border_button_white_green"
+                            android:text="Beleza"/>
+
+                        <Button
+                            android:id="@+id/btn_scl_Joiasebijouterias"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:paddingHorizontal="10dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:background="@drawable/border_button_white_green"
+                            android:text="Jóias e Bijouterias" />
+
+                </LinearLayout>
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:id="@+id/bottom_bar_container"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Veja seu saldo em TrashCoins"
+            android:textColor="@color/colorText"
+            android:textSize="20dp"
+            android:fontFamily="@font/comfortaa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtTotalTCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="0"
+            android:textColor="@color/colorAccent"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/couponsRecycler"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_bar_container"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnShoppingKart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_shopping_cart_white_24dp"
+            app:backgroundTint="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_bar_container"
+            app:layout_constraintEnd_toEndOf="@+id/couponsRecycler" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

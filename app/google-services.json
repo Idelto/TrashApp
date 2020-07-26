@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "194194881728",
+    "firebase_url": "https://trash2moneyappuser.firebaseio.com",
+    "project_id": "trash2moneyappuser",
+    "storage_bucket": "trash2moneyappuser.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194194881728:android:39978d73afb251e5068125",
+        "android_client_info": {
+          "package_name": "com.example.trash2money_pickerapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194194881728-vde9neos0eo142hglljvcp07taetrb5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trash2money_pickerapp",
+            "certificate_hash": "75598129133803d6ae9ba0fd6a12120615625a90"
+          }
+        },
+        {
+          "client_id": "194194881728-44o9pokksr8t80slep4vqgfqjkmcnplr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9eQZA01OUiQKTR5fe1eMYwastRam4RIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194194881728-44o9pokksr8t80slep4vqgfqjkmcnplr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194194881728:android:b14b508d0d69a76f068125",
+        "android_client_info": {
+          "package_name": "com.example.trash2money_userapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194194881728-djavhbltddhmcgf1aifo1dtfh2k2vjns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trash2money_userapp",
+            "certificate_hash": "75598129133803d6ae9ba0fd6a12120615625a90"
+          }
+        },
+        {
+          "client_id": "194194881728-44o9pokksr8t80slep4vqgfqjkmcnplr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9eQZA01OUiQKTR5fe1eMYwastRam4RIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194194881728-44o9pokksr8t80slep4vqgfqjkmcnplr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194194881728:android:eca892cf83bee32d068125",
+        "android_client_info": {
+          "package_name": "com.trash2money.trashapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194194881728-rc09ksnp7igeorsafmn6qqaoilucsk23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trash2money.trashapp",
+            "certificate_hash": "cb61c9218581570692264a952d4044512cc992c9"
+          }
+        },
+        {
+          "client_id": "194194881728-gufuv4lut5ppclgaj90cq9l4hslq08ag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trash2money.trashapp",
+            "certificate_hash": "75598129133803d6ae9ba0fd6a12120615625a90"
+          }
+        },
+        {
+          "client_id": "194194881728-44o9pokksr8t80slep4vqgfqjkmcnplr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9eQZA01OUiQKTR5fe1eMYwastRam4RIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194194881728-44o9pokksr8t80slep4vqgfqjkmcnplr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

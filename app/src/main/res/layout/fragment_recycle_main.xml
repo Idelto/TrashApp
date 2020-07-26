@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="true">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.trash2money.trashapp.Fragments.FragmentConteinerReciclarProcurar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+
+        android:layout_marginEnd="30dp"
+        android:text="Agora reciclar está mais fácil 👍 , basta escolher o seus recicláveis e enviar para a lixeira 😍"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment">
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crd_aluminio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardBackground"
+                            android:orientation="horizontal"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:background="@drawable/ic_group_aluminium_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/comfortaa"
+                                android:gravity="center"
+                                android:text="Alumínio e Aço"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorText"
+                                android:textSize="20dp"
+                                tools:ignore="RtlCompat">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/img_slidedownAluminio"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_down_colortext_24dp"
+                                android:clickable="true"></ImageView>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/container_aluminio"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_aluminium_slideup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardBackground"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/img_slideupAluminio"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_up_yellow"
+                                android:backgroundTint="@color/colorText"
+                                android:clickable="true"
+                                android:visibility="visible">
+
+                            </ImageView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crd_plastico"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardBackground"
+                            android:orientation="horizontal"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:background="@drawable/ic_plastic_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/comfortaa"
+                                android:gravity="center"
+                                android:text="Plástico e Isopor"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorText"
+                                android:textSize="20dp"
+                                tools:ignore="RtlCompat">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/img_slidedownPlastico"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_down_colortext_24dp"
+                                android:clickable="true"></ImageView>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/container_plastico"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_plastico_slideup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardBackground"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/img_slideupPlastico"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_up_yellow"
+                                android:backgroundTint="@color/colorText"
+                                android:clickable="true"></ImageView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crd_papeis"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardBackground"
+                            android:orientation="horizontal"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:background="@drawable/ic_paper_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/comfortaa"
+                                android:gravity="center"
+                                android:text="Papéis e Papelão"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorText"
+                                android:textSize="20dp"
+                                tools:ignore="RtlCompat">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/img_slidedownPapeis"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_down_colortext_24dp"
+                                android:clickable="true"></ImageView>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/container_papeis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_papeis_slideup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardBackground"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/img_slideupPapeis"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_up_yellow"
+                                android:backgroundTint="@color/colorText"
+                                android:clickable="true"></ImageView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crd_vidro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardBackground"
+                            android:orientation="horizontal"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:background="@drawable/ic_vidro_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/comfortaa"
+                                android:gravity="center"
+                                android:text="Vidro"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorText"
+                                android:textSize="20dp"
+                                tools:ignore="RtlCompat">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/img_slidedownVidro"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_down_colortext_24dp"
+                                android:clickable="true"></ImageView>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/container_vidro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_vidro_slideup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardBackground"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/img_slideupVidro"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_up_yellow"
+                                android:backgroundTint="@color/colorText"
+                                android:clickable="true"></ImageView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crd_eletronico"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardBackground"
+                            android:orientation="horizontal"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:background="@drawable/ic_battery_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/comfortaa"
+                                android:gravity="center"
+                                android:text="Eletrônicos"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorText"
+                                android:textSize="20dp"
+                                tools:ignore="RtlCompat">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/img_slidedownEletronicos"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_down_colortext_24dp"
+                                android:clickable="true"></ImageView>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/container_eletronicos"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_eletronicos_slideup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardBackground"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/img_slideupEletronicos"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_up_yellow"
+                                android:backgroundTint="@color/colorText"
+                                android:clickable="true"></ImageView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crd_oleo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardBackground"
+                            android:orientation="horizontal"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:background="@drawable/ic_oil_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/comfortaa"
+                                android:gravity="center"
+                                android:text="Óleo Vegetal"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorText"
+                                android:textSize="20dp"
+                                tools:ignore="RtlCompat">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/img_slidedownOleo"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_down_colortext_24dp"
+                                android:clickable="true"></ImageView>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/container_oleo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_oleo_slideup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardBackground"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/img_slideupOleo"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_up_yellow"
+                                android:backgroundTint="@color/colorText"
+                                android:clickable="true"></ImageView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/crd_metais"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/cardBackground"
+                            android:orientation="horizontal"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+
+                                android:background="@drawable/ic_beam_steel_green"></ImageView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:layout_weight="1"
+                                android:backgroundTint="@android:color/transparent"
+                                android:fontFamily="@font/comfortaa"
+                                android:gravity="center"
+                                android:text="Outros Metais"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/colorText"
+                                android:textSize="20dp"
+                                tools:ignore="RtlCompat">
+
+                            </TextView>
+
+                            <ImageView
+                                android:id="@+id/img_slidedownMetais"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_down_colortext_24dp"
+                                android:clickable="true"></ImageView>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:id="@+id/container_metais"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone">
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@+id/linearlayout_metais_slideup"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/cardBackground"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:id="@+id/img_slideupMetais"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_gravity="right"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:background="@drawable/ic_keyboard_arrow_up_yellow"
+                                android:backgroundTint="@color/colorText"
+                                android:clickable="true"></ImageView>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAnimate"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dolphin" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/bottom_bar_container"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:id="@+id/linearlayoutautocomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/zxing_transparent"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/at_CompleteTextViewProduto"
+            android:layout_width="match_parent"
+            android:fallbackLineSpacing="true"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="O que deseja reciclar ?">
+
+        </AutoCompleteTextView>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_produtos_geral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/zxing_transparent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayoutautocomplete"
+        app:layout_goneMarginBottom="10dp"
+        app:layout_goneMarginTop="10dp"
+        app:srcCompat="@drawable/ic_a_vid_azeites" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

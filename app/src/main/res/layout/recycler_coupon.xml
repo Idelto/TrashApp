@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:cardCornerRadius="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/btntextColor"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_validate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCouponValue3"
+                android:layout_toEndOf="@+id/txt_validate_desc"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/quantum_grey600"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_validate_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCouponValue3"
+                android:layout_alignStart="@+id/txt_new_value3"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:text="Valido até - "
+                android:textColor="@color/quantum_grey600"
+                android:textSize="15dp" />
+
+
+
+            <TextView
+                android:id="@+id/txtCouponValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_discount"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/txtCouponValue3"
+                android:text="300"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCouponValue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_discount"
+                android:layout_alignStart="@+id/txt_new_value3"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="5dp"
+                android:text="Troque por "
+                android:textColor="@color/colorText"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtCouponValue2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_discount"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/txtCouponValue"
+                android:text="ŦrashCoins"
+                android:textColor="@color/colorText"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/imgCouponImg"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:background="@android:drawable/screen_background_light_transparent"
+                tools:srcCompat="@tools:sample/avatars[2]" />
+
+            <TextView
+                android:id="@+id/Nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgCouponImg"
+                android:layout_marginTop="7dp"
+                android:text="Estabelecimento"
+                android:layout_marginLeft="8dp"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="20dp" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@+id/txt_validate"
+                android:layout_marginTop="10dp"
+                android:background="?attr/dividerHorizontal" />
+
+            <TextView
+                android:id="@+id/txtCouponShortDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Nome"
+                android:layout_marginTop="8dp"
+                android:text="Descrição do cuppon"
+                android:textColor="@color/quantum_grey600"
+                android:layout_marginLeft="8dp"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCouponShortDescription"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/txt_new_value3"
+                android:text="@string/crossed"
+                android:textColor="@color/quantum_grey600"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_new_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCouponShortDescription"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:layout_toEndOf="@+id/txt_new_value2"
+                android:text="15 R$ "
+                android:textColor="@color/quantum_googyellow700"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_new_value2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCouponShortDescription"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/txt_discount"
+                android:text="por"
+                android:textColor="@color/quantum_grey600"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_new_value3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCouponShortDescription"
+                android:layout_alignStart="@+id/txtCouponShortDescription"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="10dp"
+                android:text="de"
+                android:textColor="@color/quantum_grey600"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/txt_disc_cp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/quantum_white_100"
+                android:background="@drawable/border_circle_orange"
+                android:gravity="center"
+                android:text="50%"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        />
+
+</LinearLayout>

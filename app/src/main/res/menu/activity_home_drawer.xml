@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_myTrashPointCan"
+            android:icon="@drawable/ic_delete_black2_24dp"
+            android:title="@string/menu_trash_point_can" />
+
+        <item
+            android:id="@+id/nav_myTrashCoinsBalance"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="@string/menu_trash_coin_balance" />
+        <item
+            android:id="@+id/nav_myCouponKart"
+            android:icon="@drawable/ic_local_grocery_store_black_24dp"
+            android:title="@string/menu_coupon_kart" />
+        <item
+            android:id="@+id/nav_myCoupons"
+            android:icon="@drawable/ic_local_activity_black_24dp"
+            android:title="@string/menu_my_coupons" />
+        <item
+            android:id="@+id/nav_myRequests"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="@string/menu_my_requests" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_account"
+            android:title="@string/menu_profile" />
+    </group>
+
+    <item android:title="Comunicação">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_help_black_24dp"
+                android:title="Ajuda" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_black_24dp"
+                android:title="@string/menu_about" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>
